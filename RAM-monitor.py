@@ -6,16 +6,16 @@
 
 import psutil
 import sys
-import time 
+import time
+import os
 
 
 # Enable ANSI escape codes on Windows (not needed on Linux/Mac)
 
 if sys.platform == "win32":
-    import os
     os.system("")
     
-# clear this screen to strat a application 
+# clear this screen to start the application 
 
 print("\033c", end="")
 
@@ -74,7 +74,7 @@ while running :
 
         print()
 
-        print(f"{color_per}total Ram :{total_rounded} GB    {color_reset}")
+        print(f"{color_per}total Ram : {total_rounded} GB    {color_reset}")
         print(f"{color_per}usage Ram : {used_rounded} GB    {color_reset}")
         print(f"{color_per}available Ram : {available_rounded} GB    {color_reset}")
         print(f"{color_per}usage Ram % : {percent_ram} %  {color_reset}")
@@ -89,19 +89,11 @@ while running :
         
 
     except (KeyboardInterrupt, SystemExit):
-        try :
-            running = False
-            print()
+        running = False
+        print()
 
-            print(f"{color_orange}Thank you for using RAM-monitor!{color_reset}")
-            print(f"{color_orange}Author : https://github.com/MultiRight{color_reset}")
-        except KeyboardInterrupt :
-
-            running = False
-            print()
-
-            print(f"{color_orange}Thank you for using RAM-monitor!{color_reset}")
-            print(f"{color_orange}Author : https://github.com/MultiRight{color_reset}")
+        print(f"{color_orange}Thank you for using RAM-monitor!{color_reset}")
+        print(f"{color_orange}Author : https://github.com/MultiRight{color_reset}")
 
 
 
