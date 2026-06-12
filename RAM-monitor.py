@@ -7,11 +7,7 @@
 import psutil
 import sys
 import time 
-import signal
 
-# Fix Ctrl + c exit
-
-signal.signal(signal.SIGINT,signal.default_int_handler)
 
 # Enable ANSI escape codes on Windows (not needed on Linux/Mac)
 
@@ -90,15 +86,22 @@ while running :
 
         time.sleep(0.5)
         print("\033[H" , end="")
+        
 
-    except KeyboardInterrupt:
-        running = False
-        print()
+    except (KeyboardInterrupt, SystemExit):
+        try :
+            running = False
+            print()
 
-        print(f"{color_orange}Thank you for using RAM-monitor!{color_reset}")
-        print(f"{color_orange}Author : https://github.com/MultiRight{color_reset}")
+            print(f"{color_orange}Thank you for using RAM-monitor!{color_reset}")
+            print(f"{color_orange}Author : https://github.com/MultiRight{color_reset}")
+        except KeyboardInterrupt :
 
-        break
+            running = False
+            print()
+
+            print(f"{color_orange}Thank you for using RAM-monitor!{color_reset}")
+            print(f"{color_orange}Author : https://github.com/MultiRight{color_reset}")
 
 
 
