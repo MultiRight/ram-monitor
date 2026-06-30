@@ -42,7 +42,6 @@ cd RAM-monitor
 ```bash
 pip install psutil
 ```
-
 ---
 
 ## Usage
