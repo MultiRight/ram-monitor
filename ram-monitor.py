@@ -81,7 +81,7 @@ while running :
             last_size = current_size
         
         
-        print(f"{color_light_blue}                               RAM-monitor                               {color_reset}")
+        print(f"{color_light_blue}                               ram-monitor                               {color_reset}")
 
         print()
         print("--------------------------------------------------------------------")
@@ -105,7 +105,7 @@ while running :
             running = False
             print()
 
-            print(f"{color_orange}Thank you for using RAM-monitor!{color_reset}")
+            print(f"{color_orange}Thank you for using ram-monitor!{color_reset}")
             print(f"{color_orange}Author : https://github.com/MultiRight{color_reset}")
 
 
