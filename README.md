@@ -1,4 +1,4 @@
-# RAM Monitor
+# ram-monitor
 
 A lightweight terminal-based RAM monitoring tool written in Python.
 Displays real-time memory usage with color-coded status indicators.
@@ -7,7 +7,7 @@ Displays real-time memory usage with color-coded status indicators.
 
 ## Overview
 
-RAM-Monitor continuously tracks system memory usage and displays it in the terminal with color-coded output based on consumption levels. It is designed to be simple, cross-platform, and dependency-minimal.
+ram-monitor continuously tracks system memory usage and displays it in the terminal with color-coded output based on consumption levels. It is designed to be simple, cross-platform, and dependency-minimal.
 
 ---
 
@@ -33,8 +33,8 @@ RAM-Monitor continuously tracks system memory usage and displays it in the termi
 **Clone the repository:**
 
 ```bash
-git clone https://github.com/MultiRight/RAM-monitor
-cd RAM-monitor
+git clone https://github.com/MultiRight/ram-monitor
+cd ram-monitor
 ```
 
 **Install dependencies:**
@@ -47,7 +47,7 @@ pip install psutil
 ## Usage
 
 ```bash
-python RAM-monitor.py
+python ram-monitor.py
 ```
 
 To stop the monitor, press `Ctrl+C`. A goodbye message will be displayed before exiting.
